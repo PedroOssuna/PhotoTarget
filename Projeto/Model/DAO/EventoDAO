@@ -1,0 +1,19 @@
+from PyQt4.QtSql import QSqlQuery
+from DataBase.ConexaoSQL import ConexaoSQL
+
+
+class UsuarioDAO:
+    def CadastrarEvento(evento):
+        conn = ConexaoSQL
+        db = conn.getConexao()
+        db.open()
+
+        query = QSqlQuery()
+        query.prepare("INSERT INTO eventos(Nome, Foto, Tag) "
+                      "VALUES (?, ?, ?)")
+        query.addBindValue(evento.Nome)
+        query.addBindValue(evento.Foto)
+        query.addBindValue(evento.Tag)
+
+        query.exec_()
+        db.commit()

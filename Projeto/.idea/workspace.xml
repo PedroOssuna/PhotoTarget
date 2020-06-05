@@ -16,7 +16,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Model/DAO" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pedro\Documents\Phototarget\Projeto\Model\DAO" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pedro\Documents\Phototarget\Projeto" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,9 +40,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2529" y="223" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591227080891">
+    <state x="2281" y="76" key="#Notifications" timestamp="1591237068228">
       <screen x="1920" y="0" width="1536" height="840" />
     </state>
-    <state x="2529" y="223" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591227080891" />
+    <state x="2281" y="76" key="#Notifications/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591237068228" />
+    <state x="2529" y="223" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591323622431">
+      <screen x="1920" y="0" width="1536" height="840" />
+    </state>
+    <state x="2529" y="223" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1536.840/0.0.1920.1050@1920.0.1536.840" timestamp="1591323622431" />
   </component>
 </project>

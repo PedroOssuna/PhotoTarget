@@ -1,0 +1,31 @@
+from PyQt4.QtSql import QSqlQuery
+from DataBase.ConexaoSQL import ConexaoSQL
+
+class UsuarioDAO:
+    def CadastrarUsuario(usuario):
+        conn = ConexaoSQL
+        db = conn.getConexao()
+        db.open()
+
+        query = QSqlQuery()
+        query.prepare("INSERT INTO usuarios(Nome, NomeLogin, Supervisor, Senha) "
+                      "VALUES (?, ?, ?, ?)")
+        query.addBindValue(usuario.Nome)
+        query.addBindValue(usuario.NomeLogin)
+        query.addBindValue(usuario.Supervisor)
+        query.addBindValue(usuario.Senha)
+
+        query.exec_()
+        db.commit()
+
+    def AtualizarUsuario(codigoUser, usuario):
+        conn = ConexaoSQL
+        db = conn.getConexao()
+        db.open()
+
+        query = QSqlQuery()
+        query.prepare("UPDATE usuarios SET Nome = '"+usuario.Nome+"', NomeLogin = '"+usuario.NomeLogin
+                      +"', Supervisor = '"+usuario.Supervisor+"', Senha = '"+usuario.Senha
+                      +"' WHERE CodigoUser = "+codigoUser)
+        query.exec_()
+        db.commit()
